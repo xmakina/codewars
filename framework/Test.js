@@ -1,4 +1,4 @@
-/* global it */
+/* global it, describe */
 const chai = require('chai')
 
 module.exports = {
@@ -6,5 +6,10 @@ module.exports = {
     return it(`${actual} should be similar to ${expected}`, () => {
       return chai.expect(actual).to.equal(expected)
     })
+  },
+  describe,
+  it,
+  assertEquals: function (actual, expected, msg, options) {
+    return chai.expect(actual).to.equal(expected)
   }
 }
