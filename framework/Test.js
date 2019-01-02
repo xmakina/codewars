@@ -11,5 +11,10 @@ module.exports = {
   it,
   assertEquals: function (actual, expected, msg, options) {
     return chai.expect(actual).to.equal(expected)
+  },
+  itAssertEquals: function (actual, expected, msg, options) {
+    return it(msg || '', () => {
+      this.assertEquals(actual, expected, msg, options)
+    })
   }
 }
