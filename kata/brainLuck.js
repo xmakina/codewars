@@ -29,7 +29,7 @@ module.exports = function brainLuck (code, input) {
   }, [])
 
   let state = makeState(input, instructions, jumpPairs)
-  console.log(state.input, input)
+  
   while (state.instructionPointer < instructions.length) {
     state.getCurrentInstruction()(state)
     state.instructionPointer++
