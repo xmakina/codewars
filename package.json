@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha kata/**/*.spec.js --reporter spec",
-    "test:watch": "mocha kata/**/*.spec.js --reporter spec --watch"
+    "test:watch": "mocha kata/**/*.spec.js --reporter min --watch"
   },
   "author": "",
   "license": "ISC",
