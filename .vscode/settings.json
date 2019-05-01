@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": false,
+    "eslint.autoFixOnSave": true,
+    "standard.validate": [
+        "javascript"
+    ],
+    "eslint.validate": [
+        "javascript",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ]
+}
