@@ -1,16 +1,8 @@
 {
     "editor.formatOnSave": false,
     "editor.tabSize": 2,
-    "eslint.autoFixOnSave": true,
     "standard.validate": [
         "javascript"
-    ],
-    "eslint.validate": [
-        "javascript",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
     ],
     "files.exclude": {
         ".gitignore": true,
@@ -20,4 +12,8 @@
         "node_modules": true,
         "package-lock.json": true
     },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "javascript.validate.enable": false
 }
