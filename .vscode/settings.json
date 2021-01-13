@@ -20,4 +20,7 @@
         "node_modules": true,
         "package-lock.json": true
     },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
 }
